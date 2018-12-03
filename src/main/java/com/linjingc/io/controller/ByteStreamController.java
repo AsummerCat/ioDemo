@@ -2,8 +2,8 @@ package com.linjingc.io.controller;
 
 import com.linjingc.io.service.ByteStreamService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 
@@ -13,7 +13,7 @@ import java.io.IOException;
  * @author cxc
  * @date 2018/12/3 11:38
  */
-@Controller
+@RestController
 @RequestMapping("byteStream")
 public class ByteStreamController {
 
@@ -43,7 +43,6 @@ public class ByteStreamController {
     public void dataByteStream() {
         byteStreamService.dataByteStream();
     }
-
 
 
 }
